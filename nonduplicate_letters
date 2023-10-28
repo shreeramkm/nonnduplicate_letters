@@ -1,0 +1,29 @@
+package Dailyprojects;
+import java.util.Scanner;
+
+public class duplicareletter {
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		String sr=sc.nextLine();
+		int a=sr.length(),b=0;
+		char k='o';
+		int[] ar= new int[1000];
+		for(int i=0;i<a;i++) {
+			b=sr.charAt(i);
+			ar[b]=0;
+		}
+		for(int i=0;i<a;i++) {
+			b=sr.charAt(i);
+			ar[b]=ar[b]+1;
+		}
+		for(int i=0;i<a;i++) {
+			b=sr.charAt(i);
+			if(ar[b]>1 && ar[b]!=-1) {
+				ar[b]=-1;
+			System.out.println(sr.charAt(i));
+			}k=sr.charAt(i);
+		}
+	}
+
+
+}
